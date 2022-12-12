@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -6,24 +6,36 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import MenuIcon from '@mui/icons-material/Menu';
 const Navbar = () => {
+  const [scroll, setScroll] = useState(false);
   const li = (
     <>
       <CustomLink to="/home">
-        <span className="mx-4">Home</span>
+        <span className="lg:mx-4 mx-1">Home</span>
       </CustomLink>
       <CustomLink to="/shop">
-        <span className="mx-4">Shop</span>
+        <span className="lg:mx-4 mx-1">Shop</span>
       </CustomLink>
       <CustomLink to="/about">
-        <span className="mx-4">About</span>
+        <span className="lg:mx-4 mx-1">About</span>
       </CustomLink>
       <CustomLink to="/contact">
-        <span className="mx-4">Contact</span>
+        <span className="lg:mx-4 mx-1">Contact</span>
       </CustomLink>
     </>
   );
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) {
+      setScroll(true);
+    } else if (window.scrollY < 150) {
+      setScroll(false);
+    }
+  });
   return (
-    <div className="navbar bg-black text-white lg:px-16">
+    <div
+      className={`${
+        scroll && ' bg-black'
+      } navbar bg-yellow-100 text-black lg:px-16 px-2 sticky top-0 `}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,24 +49,26 @@ const Navbar = () => {
             {li}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl" href="/home">
+          daisyUI
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{li}</ul>
       </div>
       <div className="navbar-end">
         <CustomLink to="/search">
-          <SearchIcon className="mx-3" />
+          <SearchIcon className="lg:mx-3 mx-2" />
         </CustomLink>
         <CustomLink to="/favorite">
-          <FavoriteBorderIcon className="mx-3" />
+          <FavoriteBorderIcon className="lg:mx-3 mx-2" />
         </CustomLink>
 
         <CustomLink to="/cart">
-          <ShoppingCartIcon className="mx-3" />
+          <ShoppingCartIcon className="lg:mx-3 mx-2" />
         </CustomLink>
         <CustomLink to="/profile">
-          <PersonIcon className="mx-3" />
+          <PersonIcon className="lg:mx-3 mx-2" />
         </CustomLink>
       </div>
     </div>
