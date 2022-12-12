@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import chair from '../../../../assets/images/banner-chair.png';
 const Banner1 = () => {
   return (
-    <div className=" max-h-sm bg-yellow-100">
+    <div className="">
       <AnimatePresence>
         <div className=" flex-col flex justify-between items-center lg:px-16 lg:flex-row-reverse overflow-x-hidden">
           <motion.div

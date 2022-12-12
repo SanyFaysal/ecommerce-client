@@ -6,7 +6,7 @@ const SideTable = () => {
   return (
     <div className="flex-col justify-center items-center ">
       <div>
-        <img src={sideTable} alt="" className="w-[500px] h-[400px] " />
+        <img src={sideTable} alt="" className="lg:w-[500px] lg:h-[400px] " />
       </div>
       <div className=" mt-[-100px]">
         <h1 className="text-3xl  ml-28">Side Table</h1>

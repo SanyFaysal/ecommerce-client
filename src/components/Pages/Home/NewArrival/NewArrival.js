@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import sofa from '../../../../assets/images/Asgaard sofa 1.png';
 const NewArrival = () => {
   return (
-    <div className="hero max-h-sm bg-yellow-50">
+    <div className=" max-h-sm bg-yellow-50">
       <AnimatePresence>
-        <div className="hero-content flex justify-between  overflow-x-hidden">
+        <div className=" lg:flex justify-around lg:px-16 px-5 py-6 items-center overflow-x-hidden">
           <motion.div
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -23,7 +23,7 @@ const NewArrival = () => {
               alt="banner-chair"
             />
           </motion.div>
-          <div className="lg:ml-5">
+          <div className="">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

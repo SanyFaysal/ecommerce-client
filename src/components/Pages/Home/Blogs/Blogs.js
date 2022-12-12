@@ -46,14 +46,14 @@ const Blogs = () => {
     },
   ];
   return (
-    <div className="my-16 lg:px-16 ">
+    <div className="my-16 lg:px-16 px-5">
       <h1 className="text-center text-4xl font-bold mt-10 ">Our Blogs</h1>
       <div className="w-[70px] py-[2px] bg-gray-500 rounded-lg mx-auto"></div>
-      <p className="text-center  text-xl mt-2">
+      <p className="text-center  text-xl ">
         Find a bright ideal to suit your with our great selection of suspension,
         floor and table lights{' '}
       </p>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 mt-16">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 mt-16">
         {blogs.map((blog, index) => (
           <Blog key={index} blog={blog} />
         ))}
@@ -64,7 +64,7 @@ const Blogs = () => {
             to="/shop"
             className="border-b border-b-2 text-2xl border-black"
           >
-            View More
+            View All Post
           </Link>
         </h3>
       </div>

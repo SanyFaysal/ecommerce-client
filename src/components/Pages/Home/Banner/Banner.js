@@ -4,7 +4,7 @@ import Banner1 from './BannerSlide1';
 
 const Banner = () => {
   return (
-    <div>
+    <div className="bg-yellow-100 py-5">
       <Banner1 />
     </div>
   );
