@@ -34,7 +34,7 @@ const Navbar = () => {
     <div
       className={`${
         scroll && ' bg-black'
-      } navbar bg-yellow-100 text-black lg:px-16 px-2 sticky top-0 `}
+      } navbar bg-yellow-100 text-black lg:px-16 px-2 sticky top-0 z-10`}
     >
       <div className="navbar-start">
         <div className="dropdown">
