@@ -4,6 +4,7 @@ import FilterProduct from './FilterProduct/FilterProduct';
 
 import ShopResultNav from './ShopResultNav';
 import ShopProduct from './ShopProduct';
+import ShopInfo from './ShopInfo';
 const Shop = () => {
   return (
     <div className="bg-slate-50 ">
@@ -16,6 +17,9 @@ const Shop = () => {
           <ShopResultNav />
           <ShopProduct />
         </div>
+      </div>
+      <div>
+        <ShopInfo />
       </div>
     </div>
   );

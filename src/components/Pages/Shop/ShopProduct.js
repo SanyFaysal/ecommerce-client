@@ -53,6 +53,10 @@ const ShopProduct = () => {
       productName: 'Dining Table D477 (6 Chairs + 1 Table)',
     },
     {
+      productImg: product3,
+      productName: 'Dining Table D477 (6 Chairs + 1 Table)',
+    },
+    {
       productImg: product4,
       productName: 'Dining Table DT213 (6 Chairs + 1 Table)',
     },
