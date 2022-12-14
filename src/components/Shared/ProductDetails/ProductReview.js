@@ -1,9 +1,10 @@
 import React from 'react';
+import ProductReviewModal from './ProductReviewModal';
 
 const ProductReview = () => {
   return (
     <div className="mt-10">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center mb-2">
         <div>
           <h1 className="font-semibold text-xl">All Reviews</h1>
           <p>
@@ -11,10 +12,19 @@ const ProductReview = () => {
           </p>
         </div>
         <div>
-          <button className="btn btn-accent btn-sm">Write a Review</button>
+          <label
+            htmlFor="my-modal-6"
+            className="btn btn-outline btn-success btn-sm hover:bg-green-500"
+          >
+            Write a Review
+          </label>
         </div>
       </div>
-      <div className=" flex  items-center my-5" id="review">
+
+      <div
+        className="bg-gray-50 lg:p-8 p-4 rounded-lg  flex  items-center my-5"
+        id="review"
+      >
         <div>
           <div className="mb-3">
             <div className="flex ">
@@ -63,6 +73,7 @@ const ProductReview = () => {
           </div>
         </div>
       </div>
+      <ProductReviewModal />
     </div>
   );
 };
