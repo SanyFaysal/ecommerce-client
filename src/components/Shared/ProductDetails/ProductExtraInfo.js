@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 
 const ProductExtraInfo = () => {
   return (
@@ -7,15 +8,18 @@ const ProductExtraInfo = () => {
       <div>
         <ul className="flex justify-center text-xl">
           <li>
-            <Link>Description</Link>
+            <CustomLink to="description">Description</CustomLink>
           </li>
           <li className="mx-5">
-            <Link>Additional Info</Link>
+            <CustomLink to="additionalInfo">Additional Info</CustomLink>
           </li>
           <li>
-            <Link>Review (5)</Link>
+            <CustomLink to="review">Review (5)</CustomLink>
           </li>
         </ul>
+      </div>
+      <div>
+        <Outlet />
       </div>
     </div>
   );

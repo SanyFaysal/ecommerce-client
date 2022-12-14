@@ -4,6 +4,7 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import { IconButton } from '@mui/material';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
+import { Link } from 'react-router-dom';
 const ProductInfo = () => {
   const [size, setSize] = useState('L');
   const [color, setColor] = useState('L');
@@ -14,7 +15,7 @@ const ProductInfo = () => {
       <div>
         <h1 className="text-4xl font-semibold">Ashgaard Sofa</h1>
         <h2 className="font-bold text-gray-500 text-xl mt-1">
-          BDT - 78000 Taka
+          BDT - 7800 Taka
         </h2>
       </div>
       <div className="flex mt-2 ">
@@ -28,9 +29,12 @@ const ProductInfo = () => {
             sx={{ fontSize: '20px' }}
           />
         </span>
-        <span className="text-lg font-semibold ml-5 text-gray-500">
+        <a
+          href="review#review"
+          className="text-lg font-semibold ml-5 text-gray-500"
+        >
           5 Customers Review
-        </span>
+        </a>
       </div>
 
       <p className="my-3">
@@ -114,7 +118,10 @@ const ProductInfo = () => {
             <AddCircleOutlineIcon />
           </IconButton>
         </div>
-        <button className="btn px-8 btn-warning ml-6 block">
+        <button
+          className="btn px-8 btn-warning ml-6 block"
+          disabled={quantity ? false : true}
+        >
           {' '}
           ADd to cart
         </button>
