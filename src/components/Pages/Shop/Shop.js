@@ -1,14 +1,15 @@
 import React from 'react';
-import ShopBanner from './ShopBanner';
+
 import FilterProduct from './FilterProduct/FilterProduct';
 
 import ShopResultNav from './ShopResultNav';
 import ShopProduct from './ShopProduct';
 import ShopInfo from './ShopInfo';
+import NavigateBanner from '../../Shared/Navbar/NavigateBanner';
 const Shop = () => {
   return (
     <div className="bg-slate-50 ">
-      <ShopBanner />
+      <NavigateBanner />
       <div className="px-4 my-5 grid grid-cols-10 gap-4">
         <div className="lg:block hidden lg:col-span-2">
           <FilterProduct />

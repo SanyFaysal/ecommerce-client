@@ -5,6 +5,8 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import MenuIcon from '@mui/icons-material/Menu';
+// import Cart from '../../Pages/Cart/Cart';
+import CartDropDown from '../../Pages/Cart/CartDropDown';
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   const li = (
@@ -33,8 +35,8 @@ const Navbar = () => {
   return (
     <div
       className={`${
-        scroll && ' bg-black'
-      } navbar bg-yellow-100 text-black lg:px-16 px-2 sticky top-0 z-10`}
+        scroll ? 'bg-yellow-200' : 'bg-yellow-100'
+      } navbar  text-black lg:px-16 px-2 sticky top-0 z-10`}
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -63,10 +65,13 @@ const Navbar = () => {
         <CustomLink to="/favorite">
           <FavoriteBorderIcon className="lg:mx-3 mx-2" />
         </CustomLink>
+        <div className="dropdown dropdown-left  rounded-0">
+          <label tabIndex={0} className="">
+            <ShoppingCartIcon className="lg:mx-3 mx-2" />
+          </label>
+          <CartDropDown />
+        </div>
 
-        <CustomLink to="/cart">
-          <ShoppingCartIcon className="lg:mx-3 mx-2" />
-        </CustomLink>
         <CustomLink to="/profile">
           <PersonIcon className="lg:mx-3 mx-2" />
         </CustomLink>

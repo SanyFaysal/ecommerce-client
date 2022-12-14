@@ -2,7 +2,7 @@ import React from 'react';
 
 const ShopInfo = () => {
   return (
-    <div className="bg-[#FAF4F4] lg:grid grid-cols-3 grid-cols-1 py-12 lg:px-16 px-4 gap-5 my-auto ">
+    <div className="bg-[#FAF4F4] grid lg:grid-cols-3 grid-cols-1 py-12 lg:px-16 px-4 gap-5 my-auto ">
       <div className="border-r px-2">
         <h1 className="text-3xl font-bold text-center">Free Delivery</h1>
         <p className="text-lg  text-center">

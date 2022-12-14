@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import navigation_bg from '../../../assets/images/navgation-bg.png';
 import titleImg from '../../../assets/images/navigation-title-img.png';
-const ShopBanner = () => {
+const NavigateBanner = () => {
+  const home = 'home';
   return (
     <div
       style={{
@@ -16,7 +17,7 @@ const ShopBanner = () => {
         <div className="text-sm breadcrumbs mx-auto">
           <ul className="flex justify-center">
             <li>
-              <Link to="/home">Home</Link>
+              <Link to={`/${home}`}>Home</Link>
             </li>
             <li>
               <Link to="/shop">Shop</Link>
@@ -28,4 +29,4 @@ const ShopBanner = () => {
   );
 };
 
-export default ShopBanner;
+export default NavigateBanner;

@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import Cart from './components/Pages/Cart/Cart';
 import Home from './components/Pages/Home/Home';
 import Shop from './components/Pages/Shop/Shop';
 import Footer from './components/Shared/Footer/Footer';
@@ -25,6 +26,7 @@ function App() {
           ></Route>
           <Route path="review" element={<ProductReview />}></Route>
         </Route>
+        <Route path="/cart" element={<Cart />}></Route>
       </Routes>
       <Footer />
     </div>
