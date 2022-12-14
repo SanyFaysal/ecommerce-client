@@ -4,7 +4,7 @@ import NavigateBanner from '../../Shared/Navbar/NavigateBanner';
 const Cart = () => {
   return (
     <div className="bg-slate-50 ">
-      <NavigateBanner />
+      <NavigateBanner title="Cart" navigateFrom="home" navigateTo="cart" />
     </div>
   );
 };

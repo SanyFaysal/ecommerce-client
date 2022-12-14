@@ -9,7 +9,7 @@ import NavigateBanner from '../../Shared/Navbar/NavigateBanner';
 const Shop = () => {
   return (
     <div className="bg-slate-50 ">
-      <NavigateBanner />
+      <NavigateBanner title="Shop" navigateFrom="home" navigateTo="shop" />
       <div className="px-4 my-5 grid grid-cols-10 gap-4">
         <div className="lg:block hidden lg:col-span-2">
           <FilterProduct />
