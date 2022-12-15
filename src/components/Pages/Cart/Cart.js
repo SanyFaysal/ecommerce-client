@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NavigateBanner from '../../Shared/Navbar/NavigateBanner';
 import ShopInfo from '../Shop/ShopInfo';
 import CartItem from './CartItem';
@@ -6,7 +7,7 @@ import CartTotals from './CartTotals';
 
 const Cart = () => {
   return (
-    <div className="bg-slate-50 lg:px-16 px-4">
+    <div className="bg-slate-50 lg:px-16 px-4 ">
       <NavigateBanner title="Cart" navigateFrom="home" navigateTo="cart" />
       <div className="grid lg:grid-cols-3 gap-10 my-10">
         <div className="lg:col-span-2">
@@ -19,9 +20,18 @@ const Cart = () => {
             <div className="col-span-1"></div>
           </div>
           <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
         </div>
         <div className=" lg:col-span-1 bg-yellow-100  h-[55vh] py-5  rounded-lg">
-          <CartTotals />
+          <Link to="/checkout">
+            {' '}
+            <CartTotals />
+          </Link>
         </div>
       </div>
       <ShopInfo />

@@ -8,8 +8,19 @@ import ProductAdditionalInfo from './components/Shared/ProductDetails/ProductAdd
 import ProductDescription from './components/Shared/ProductDetails/ProductDescription';
 import ProductDetails from './components/Shared/ProductDetails/ProductDetails';
 import ProductReview from './components/Shared/ProductDetails/ProductReview';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import IconButton from '@mui/material/IconButton';
+import { useState } from 'react';
 
 function App() {
+  const [scroll, setScroll] = useState(false);
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 200) {
+      setScroll(true);
+    } else if (window.scrollY <= 200) {
+      setScroll(false);
+    }
+  });
   return (
     <div>
       <Navbar />
@@ -29,6 +40,16 @@ function App() {
         <Route path="/cart" element={<Cart />}></Route>
       </Routes>
       <Footer />
+      {scroll && (
+        <div className="w-10 h-10 flex duration-500 justify-center items-center bg-gray-200 rounded-full fixed bottom-10 right-12">
+          <IconButton aria-label="" onClick={() => window.scrollTo(0, 0)}>
+            <KeyboardDoubleArrowUpIcon
+              className=""
+              sx={{ fontSize: '25px', color: 'orange' }}
+            />
+          </IconButton>
+        </div>
+      )}
     </div>
   );
 }

@@ -5,6 +5,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { pink, red } from '@mui/material/colors';
 import PreviewIcon from '@mui/icons-material/Preview';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import { Link } from 'react-router-dom';
 const Product = ({ product }) => {
   const { productImg, productName } = product;
   const [favorite, setFavorite] = useState(false);
@@ -23,9 +24,12 @@ const Product = ({ product }) => {
           {/* <button className="btn btn-outline btn-sm hover:bg-orange-700 hover:border-0 duration-500">
             Add To Cart
           </button> */}
-          <button className="lg:btn lg:btn-sm lg:bg-transparent lg:text-black lg:border-gray-200 lg:hover:bg-white lg:hover:text-black">
+          <Link
+            to="/productDetails/1"
+            className="lg:btn lg:btn-sm lg:bg-transparent lg:text-black lg:border-gray-200 lg:hover:bg-white lg:hover:text-black"
+          >
             <RemoveRedEyeIcon /> <span className="hidden lg:inline">View</span>
-          </button>
+          </Link>
           <button className="lg:btn lg:btn-sm lg:bg-transparent lg:text-black lg:border-gray-200 lg:hover:bg-white lg:hover:text-black">
             <AddShoppingCartIcon />{' '}
             <span className="hidden lg:inline">Add Cart</span>
