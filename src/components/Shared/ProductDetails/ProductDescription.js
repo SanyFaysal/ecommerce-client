@@ -34,7 +34,7 @@ const ProductDescription = () => {
           It enables you to enjoy your gaming sessions more comfortably.
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="lg:flex justify-center">
         <img src={descriptionImg} alt="" className="w-[70vh] p-5" />
         <img src={descriptionImg} alt="" className="w-[70vh] p-5" />
       </div>

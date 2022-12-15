@@ -26,7 +26,7 @@ const CartDropDown = () => {
             <div>
               <h1 className=" font-bold text-lg">Asgaard Sofa</h1>
               <p className=" font-semibold">
-                1 <CloseIcon /> BDT. 7800 TK
+                1 <CloseIcon sx={{ fontSize: '16px' }} /> BDT. 7800 TK
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@ const CartDropDown = () => {
             <div>
               <h1 className=" font-bold text-lg">Asgaard Sofa</h1>
               <p className=" font-semibold">
-                1 <CloseIcon /> BDT. 7800 TK
+                1 <CloseIcon sx={{ fontSize: '16px' }} /> BDT. 7800 TK
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ const CartDropDown = () => {
             <div>
               <h1 className=" font-bold text-lg">Asgaard Sofa</h1>
               <p className=" font-semibold">
-                1 <CloseIcon /> BDT. 7800 TK
+                1 <CloseIcon sx={{ fontSize: '16px' }} /> BDT. 7800 TK
               </p>
             </div>
           </div>
@@ -79,7 +79,7 @@ const CartDropDown = () => {
       </div>
       <div className="p-5 flex justify-between  items-center">
         <p className="text-lg font-semibold ">Subtotal</p>
-        <p className="text-lg font-semibold text-warning">BDT. 23400 TK </p>
+        <p className="text-lg font-semibold text-yellow-400">BDT. 23400 TK </p>
       </div>
       <hr />
       <div className="px-5 py-2 flex justify-between ">

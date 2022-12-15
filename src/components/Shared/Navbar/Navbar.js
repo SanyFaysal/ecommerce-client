@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CartDropDown from '../../Pages/Cart/CartDropDown';
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const li = (
     <>
       <CustomLink to="/home">
@@ -66,10 +67,16 @@ const Navbar = () => {
           <FavoriteBorderIcon className="lg:mx-3 mx-2" />
         </CustomLink>
         <div className="dropdown dropdown-left  rounded-0">
-          <label tabIndex={0} className="">
+          <label tabIndex={0} onClick={() => setIsOpen(!isOpen)}>
             <ShoppingCartIcon className="lg:mx-3 mx-2" />
           </label>
-          <CartDropDown />
+          <div
+            className={`${
+              isOpen ? 'hidden text-red-500' : 'block'
+            } duration-500`}
+          >
+            <CartDropDown />
+          </div>
         </div>
 
         <CustomLink to="/profile">
