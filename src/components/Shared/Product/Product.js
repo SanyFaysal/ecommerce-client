@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import { pink, red } from '@mui/material/colors';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { red } from '@mui/material/colors';
+
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import { Link } from 'react-router-dom';
 const Product = ({ product }) => {

@@ -11,6 +11,8 @@ import ProductReview from './components/Shared/ProductDetails/ProductReview';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import IconButton from '@mui/material/IconButton';
 import { useState } from 'react';
+import Checkout from './components/Pages/Checkout/Checkout';
+import Payment from './components/Pages/Payment/Payment';
 
 function App() {
   const [scroll, setScroll] = useState(false);
@@ -38,6 +40,8 @@ function App() {
           <Route path="review" element={<ProductReview />}></Route>
         </Route>
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/checkout" element={<Checkout />}></Route>
+        <Route path="/payment" element={<Payment />}></Route>
       </Routes>
       <Footer />
       {scroll && (

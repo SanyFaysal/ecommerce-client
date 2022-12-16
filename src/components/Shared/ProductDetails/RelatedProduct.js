@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import product1 from '../../../assets/images/product1.png';
-import product2 from '../../../assets/images/product2.png';
 import product3 from '../../../assets/images/product3.png';
 import product4 from '../../../assets/images/product4.png';
 import Product from '../../Shared/Product/Product';

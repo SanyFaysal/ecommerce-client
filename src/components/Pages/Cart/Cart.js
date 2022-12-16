@@ -28,10 +28,7 @@ const Cart = () => {
           <CartItem />
         </div>
         <div className=" lg:col-span-1 bg-yellow-100  h-[55vh] py-5  rounded-lg">
-          <Link to="/checkout">
-            {' '}
-            <CartTotals />
-          </Link>
+          <CartTotals />
         </div>
       </div>
       <ShopInfo />
