@@ -40,7 +40,7 @@ const OrderInfo = () => {
       </div>
 
       <div className="mt-12 flex justify-center">
-        <button className="btn btn-outline px-12 text-lg hover:bg-transparent hover:text-yellow-500 hover:border-yellow-500 hover:translate-x-2 duration-500 rounded-full">
+        <button className="btn btn-outline px-12 text-lg hover:bg-transparent hover:text-yellow-500 hover:border-yellow-500  duration-500 rounded-full">
           <Link to="/payment">
             Payment{' '}
             <KeyboardDoubleArrowRightIcon

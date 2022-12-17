@@ -3,12 +3,13 @@ import NavigateBanner from '../../Shared/Navbar/NavigateBanner';
 import bkash from '../../../assets/images/bkashIcon.png';
 import bank from '../../../assets/images/bank.png';
 import BkashPayment from './BkashPayment';
+import BankPayment from './BankPayment';
 const Payment = () => {
   const [payment, setPayment] = useState('bkash');
   return (
     <div>
-      <div className="flex justify-center my-12">
-        <div className="flex mr-12 items-center">
+      <div className="lg:flex mx-auto items-center mx-auto ml-8 lg:ml-0  justify-center my-12">
+        <div className="flex lg:mr-12 items-center mb-4 lg:mb-0">
           <input
             type="radio"
             name="radio-6"
@@ -31,7 +32,7 @@ const Payment = () => {
       </div>
       <div className="mx-auto mb-16">
         {payment === 'bkash' && <BkashPayment />}
-        {payment === 'bank' && <div>This is bank</div>}
+        {payment === 'bank' && <BankPayment />}
       </div>
     </div>
   );
