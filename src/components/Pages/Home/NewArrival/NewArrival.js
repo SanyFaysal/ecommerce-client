@@ -19,7 +19,7 @@ const NewArrival = () => {
           >
             <img
               src={sofa}
-              className="lg:max-w-xl max-w-sm mx-auto rounded-lg "
+              className="lg:max-w-xl w-[300px] mx-auto rounded-lg "
               alt="banner-chair"
             />
           </motion.div>

@@ -9,7 +9,11 @@ const SubBanner = () => {
     <div className="lg:flex justify-around bg-[#FAF4F4] py-10 lg:px-16 px-5">
       <div className="flex-col justify-center items-center ">
         <div>
-          <img src={sideTable} alt="" className="lg:w-[500px] lg:h-[400px] " />
+          <img
+            src={sideTable}
+            alt=""
+            className="lg:w-[500px] lg:h-[400px] lg:ml-0 ml-[-50px]"
+          />
         </div>
         <div className=" mt-[-100px]">
           <h1 className="text-3xl  ml-28">Side Table</h1>
@@ -24,7 +28,11 @@ const SubBanner = () => {
         </div>
       </div>
       <div className="flex-col justify-center items-center lg:mr-28">
-        <img src={sideChair} alt="" className=" h-[400px] mx-auto  inline" />
+        <img
+          src={sideChair}
+          alt=""
+          className=" lg:h-[400px] mx-auto  lg:ml-0 ml-[-50px] inline"
+        />
 
         <div className=" mt-[-100px]">
           <h1 className="text-3xl  lg:ml-48 ml-28">Side Chair</h1>

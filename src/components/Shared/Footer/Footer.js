@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-yellow-50 text-base-content">
+    <footer className="footer lg:p-10 p-5 bg-yellow-50 text-base-content">
       <div className="my-auto">
         <span className="text-lg font-semibold">
           Gazipur <br /> Dhaka- Bangladesh

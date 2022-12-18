@@ -11,8 +11,8 @@ const CheckoutForm = () => {
   return (
     <div className="">
       <h1 className="text-3xl font-semibold mt-3 mb-5">Billing Details</h1>
-      <div className="grid grid-cols-2">
-        <div className="lg:mr-2">
+      <div className="grid lg:grid-cols-2">
+        <div className="lg:mr-2 mb-5 lg:mb-0">
           <TextField
             id="standard-basic"
             label="First Name"
@@ -31,9 +31,9 @@ const CheckoutForm = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 mt-5">
-        <div className="lg:mr-2">
-          <FormControl variant="filled" className=" w-full">
+      <div className="grid lg:grid-cols-2 mt-5">
+        <div className="lg:mr-2 mb-5 lg:mb-0">
+          <FormControl variant="filled" className=" w-full ">
             <InputLabel id="demo-simple-select-filled-label">
               Division
             </InputLabel>
@@ -63,8 +63,8 @@ const CheckoutForm = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 mt-5">
-        <div className="lg:mr-2 col-span-1">
+      <div className="grid lg:grid-cols-3 mt-5">
+        <div className="lg:mr-2 lg:col-span-1 mb-5 lg:mb-0">
           <TextField
             id="standard-basic"
             label="ZIP code"
@@ -73,7 +73,7 @@ const CheckoutForm = () => {
             size="small"
           />
         </div>
-        <div className="lg:ml-2 col-span-2">
+        <div className="lg:ml-2 lg:col-span-2">
           <TextField
             id="standard-basic"
             label="Street Address"

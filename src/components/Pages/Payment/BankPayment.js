@@ -11,7 +11,7 @@ const BankPayment = () => {
           Bank Payment
         </h1>
       </div>
-      <div className="grid lg:grid-cols-2 lg:px-16 px-5 gap-8 mt-8">
+      <div className="grid lg:grid-cols-2 lg:px-16 px-4 gap-8 mt-8">
         <div className="  w-full rounded lg:p-10 p-4 mx-auto border">
           <div className="">
             <h1 className="text-2xl font-semibold mb-3 ">Bank Details</h1>
@@ -68,8 +68,8 @@ const BankPayment = () => {
         />
       </p>
     </div> */}
-        <div className="  w-full rounded mx-auto border bg-yellow-50">
-          <form className="mx-10 mt-10 mb-16">
+        <div className=" p-4 w-full rounded mx-auto border bg-yellow-50">
+          <form className="lg:mx-10 mt-10 mb-16">
             <h1 className="font- text-2xl mt-4 mb-8 ">
               <span className="font-semibold ">Please Provide </span>
             </h1>
@@ -104,7 +104,7 @@ const BankPayment = () => {
                 </span>
               </label>
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-5">
               <button
                 disabled={acceptTerms ? false : true}
                 type="submit"

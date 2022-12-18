@@ -13,7 +13,7 @@ const BkashPayment = () => {
           Bkash Payment
         </h1>
       </div>
-      <div className="grid lg:grid-cols-2 lg:px-28 px-5 gap-8 mt-8">
+      <div className="grid lg:grid-cols-2 lg:px-28 px-4 gap-8 mt-8">
         <div className="border  w-full rounded lg:p-10 p-4 mx-auto ">
           <div className="">
             <h1 className="text-2xl font-semibold text-center">
@@ -93,9 +93,9 @@ const BkashPayment = () => {
           />
         </p>
       </div> */}
-        <div className="4  w-full rounded mx-auto border bg-yellow-50">
-          <form className="mx-10 mt-10 mb-6">
-            <h1 className="font- text-2xl mt-4 mb-8 ">
+        <div className=" p-4 w-full rounded mx-auto border bg-yellow-50">
+          <form className="lg:mx-10 mt-10 mb-16">
+            <h1 className="font- text-2xl lg:mt-4 mb-8 ">
               <span className="font-semibold ">Please Provide </span>
             </h1>
             <TextField

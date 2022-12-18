@@ -3,7 +3,7 @@ import followUs from '../../../../assets/images/follow-us.png';
 const FollowUs = () => {
   return (
     <div
-      className="text-center flex justify-center items-center h-[50vh]  "
+      className="text-center flex justify-center items-center h-[50vh] w-[100%] "
       style={{
         backgroundImage: `url(${followUs})`,
 

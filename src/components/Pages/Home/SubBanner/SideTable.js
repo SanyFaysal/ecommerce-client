@@ -10,7 +10,7 @@ const SideTable = () => {
       </div>
       <div className=" mt-[-100px]">
         <h1 className="text-3xl  ml-28">Side Table</h1>
-        <span className="ml-28 mt-2 inline-block">
+        <span className="lg:ml-28 mt-2 inline-block">
           <Link
             to="/shop"
             className="border-b border-b-2 border-black font-bold hover:text-blue-500 hover:border-blue-500 duration-500"
