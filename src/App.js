@@ -13,6 +13,8 @@ import IconButton from '@mui/material/IconButton';
 import { useState } from 'react';
 import Checkout from './components/Pages/Checkout/Checkout';
 import Payment from './components/Pages/Payment/Payment';
+import Login from './components/Pages/Login/Login';
+import Signup from './components/Pages/Login/Signup';
 
 function App() {
   const [scroll, setScroll] = useState(false);
@@ -42,6 +44,8 @@ function App() {
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/checkout" element={<Checkout />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
       </Routes>
       <Footer />
       {scroll && (
