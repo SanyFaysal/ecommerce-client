@@ -15,7 +15,9 @@ import Checkout from './components/Pages/Checkout/Checkout';
 import Payment from './components/Pages/Payment/Payment';
 import Login from './components/Pages/Login/Login';
 import Signup from './components/Pages/Login/Signup';
-
+import Dashboard from './components/Pages/DashBoard/Dashboard';
+import AllProducts from './components/Pages/DashBoard/AllProducts';
+import AllUsers from './components/Pages/DashBoard/AllUsers';
 function App() {
   const [scroll, setScroll] = useState(false);
   window.addEventListener('scroll', () => {
@@ -45,6 +47,12 @@ function App() {
         <Route path="/checkout" element={<Checkout />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route index element={<AllProducts />}></Route>
+          <Route path="products" element={<AllProducts />}></Route>
+          <Route path="users" element={<AllUsers />}></Route>
+          <Route path="blogs" element={<AllProducts />}></Route>
+        </Route>
         <Route path="/signup" element={<Signup />}></Route>
       </Routes>
       <Footer />

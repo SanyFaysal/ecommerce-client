@@ -24,6 +24,9 @@ const Navbar = () => {
       <CustomLink to="/contact">
         <span className="lg:mx-4 mx-1">Contact</span>
       </CustomLink>
+      <CustomLink to="/dashboard">
+        <span className="lg:mx-4 mx-1">Dashboard</span>
+      </CustomLink>
     </>
   );
   window.addEventListener('scroll', () => {
